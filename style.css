@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --primary-color: #bad7cb;
+    --secondary-color:#c46135 ;
+    --primary-dark-color:#7b9696 ;
+    --Marron: #b8a68e;
+    --black: #000;
+    --white-color: #FFF;;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--primary-color);
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 0px;
+    margin-bottom: 0.5rem;
+    background-color: var(--secondary-color)
+}
+
+.logo-mobile{
+    width: 400px;
+    height: 200px; /* Mantén esto en auto para mantener las proporciones de la imagen */
+    background-image: transparent;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.open-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-right: 30px;
+    background-color: transparent;
+    border: none;
+    width: 50px;
+    height: auto;
+}
+
+.menu {
+    display: none;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content p, .content img {
+    width: 45%; /* Ajusta este valor según tus necesidades */
+    height: auto;
+}
+
+.content img {
+    object-fit: cover; /* Esto hará que la imagen mantenga sus proporciones */
+}
+
+footer {
+    background-color:var(--black);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
