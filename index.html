@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Campichuelo</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+
 <body>
     <header class="header-mobile">
         <div class="logo">
-            <img src="img/Logo.png" class="logo-mobile" alt="Logo">
+        <a href="index.html">
+            <img src="img/Logo.png" class="logo-mobile" alt="Logo"></a> 
         </div>
+
         <button id="open-menu" class="open-menu"><img src="img/icon-menu.png" alt="icocno-menu"></button>
-        <aside id="menu" class="menu">
+        <aside id="menu" class="menu-visible">
             <ul class="nav">
                 <li><a href="nosotros.html">Nosotros</a></li>
                 <li><a href="productos.html">Productos</a></li>
@@ -29,14 +30,31 @@
     <main>
         <section class="presentacion">
             <div class="content"> 
-                <p class="texto-presentacion">La pasión por la madera, la confección de objetos
+        <h1 class="titulo-mobile">MUEBLES DE DISEÑO DE AUTOR</h1>
+                <p class="texto-presentacion">
+                    La pasión por la madera, la confección de objetos
                     útiles para nuestro hogar con propósito y calidad da
                     origen a Campichuelo, donde el diseño de autor y la
                     creación de muebles se conjugan para habitar tu
                     hogar.</p>
-                <img src="img/Copia de IMG-20220627-WA0009.jpg" alt="">
+                <img src="img/Copia de IMG-20220627-WA0009.jpg" alt="foto-presentacion">
             </div>
         </section>
+
+        <section class="informacion-pago">
+            <div>
+                <button class="boton-producto"><p>Nuestros Productos</p></button>
+            </div>
+            <div>
+                <h2> 10% OFF PAGANDO EN EFECTIVO</h2>
+                <h2>EN TODOS LOS PRODUCTOS.</h2>
+            </div>
+            <div>
+                <h2>ENVIOS A TODO EL PAIS</h2>
+            </div>
+        </section>
+
+
         <section class="redes">
             <h2>Redes</h2>
             <p>
@@ -46,22 +64,26 @@
                     <a href="https://www.instagram.com/campichuelo/"><img src="img/instagram.png" alt="Instagram"></a>
                     <a href="https://www.facebook.com/campichuelo/"><img src="img/facebook.png" alt="facebook"></a>
                     <a href="https://wa.me/549113077-7777"><img src="img/whatsapp.png" alt="whatsapp"></a>
-                
                 </div>
         </section>
         <section class="producto-destacados">
             <h2>Productos destacados</h2>
             <div class="content">
-                <div class="producto">
-                    <img src="img/IMG-20220627-WA0009.jpg" alt="">
-                    <h3>Nombre del producto</h3>
-                    <p>Descripción del producto</p>
-                    <a href="producto.html">Ver más</a>
+                <div class="content">
+                    <div class="producto">
+                        <a href="img/producto-mesa-x_2.jpg" data-lightbox="galeria">
+                            <img src="img/producto-mesa-x_2.jpg" alt="">
+                        </a>
+                        <h3>Mueble x</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In architecto voluptatibus blanditiis repellendus quam dolor quas officia doloremque! At reprehenderit nobis, quo assumenda itaque voluptatem ea ipsum reiciendis vel labore.</p>
+                        <a href="productos.html">Ver más</a>
+                    </div>
+                    <!-- Repite para cada producto -->
                 </div>
                 <div class="producto">
-                    <img src="img/IMG-20220627-WA0009.jpg" alt="">
-                    <h3>Nombre del producto</h3>
-                    <p>Descripción del producto</p>
+                    <img src="img/producto-mesa-x.jpg" alt="">
+                    <h3>Mueble nombre x</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, repellendus odit odio dolores quod nesciunt harum, sed id laboriosam consectetur rerum accusamus dolore omnis sequi vero ea eaque. Voluptas, doloremque.</p>
                     <a href="producto.html">Ver más</a>
                 <div>
                 <div class="producto">
@@ -113,8 +135,10 @@
             <div class="contacto">
                 <h3>Contacto</h3>
                 <p>Whatsapp: <a href="https://wa.me/549113077-7777">+54 9 11 3077-7777</p></a> 
-                <p>Mail: 
+                <p>Mail: <a href="mailto:"></a>
     </footer>
 <script src="java.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
         </body>
         </html>
