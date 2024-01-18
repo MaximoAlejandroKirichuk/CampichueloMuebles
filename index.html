@@ -1,144 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Campichuelo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
-
-<body>
-    <header class="header-mobile">
-        <div class="logo">
-        <a href="index.html">
-            <img src="img/Logo.png" class="logo-mobile" alt="Logo"></a> 
-        </div>
-
-        <button id="open-menu" class="open-menu"><img src="img/icon-menu.png" alt="icocno-menu"></button>
-        <aside id="menu" class="menu-visible">
-            <ul class="nav">
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="Garantia.html">Garantia y cuidados</a></li>
-            </ul>       
-        </aside>
-    </header>
-
-    <div class="container">
-
-    <main>
-        <section class="presentacion">
-            <div class="content"> 
-        <h1 class="titulo-mobile">MUEBLES DE DISEÑO DE AUTOR</h1>
-                <p class="texto-presentacion">
-                    La pasión por la madera, la confección de objetos
-                    útiles para nuestro hogar con propósito y calidad da
-                    origen a Campichuelo, donde el diseño de autor y la
-                    creación de muebles se conjugan para habitar tu
-                    hogar.</p>
-                <img src="img/Copia de IMG-20220627-WA0009.jpg" alt="foto-presentacion">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Comprá productos de Casa y Jardín por internet. Tenemos adicionales, mesas, bancos y sillas y más. Hacé tu pedido y pagalo online.">
+        <title>Campichuelo</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="mobile-header">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="img/Logo.png" class="mobile-logo" alt="Logo de la empresa">
+                </a> 
+            </div>
+            
+            <button id="menu-toggle-button" class="menu-toggle-button">
+                <img src="img/icon-menu.png" alt="Icono para abrir el menú">
+            </button>
+            
+            <nav id="main-menu" class="main-menu">
+                <button id="menu-close-button" class="menu-close-button">
+                    <img src="img/icon-close.png" alt="Icono para cerrar el menú"></button>
+                    <ul class="navigation-list">
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="Garantia.html">Garantía y cuidados</a></li>
+                    </ul>       
+                </nav>
+            </header>
+            
+            <div class="container">
+                
+                <main>
+                    <section>
+                        <div id="carrusel" class="carrusel">
+                            <button id="atras"></button>
+                            <img id="imagen-carrusel" src="" alt="imagen del carrusel">
+                            <button id="adelante"></button>
+                        </div>
+                    </section>
+                    <section class="presentacion">
+                    </section>
+                    
+                    <section class="informacion-pago">
+                        <div class="info-block">
+                            <h2>20% OFF EN EFECTIVO</h2>
+                            <h2>EN TODOS LOS PRODUCTOS.</h2>
+                        </div>
+                        <div class="info-block">
+                            <h2>ENVIOS A TODO EL PAIS</h2>
             </div>
         </section>
-
-        <section class="informacion-pago">
-            <div>
-                <button class="boton-producto"><p>Nuestros Productos</p></button>
-            </div>
-            <div>
-                <h2> 10% OFF PAGANDO EN EFECTIVO</h2>
-                <h2>EN TODOS LOS PRODUCTOS.</h2>
-            </div>
-            <div>
-                <h2>ENVIOS A TODO EL PAIS</h2>
-            </div>
-        </section>
-
-
+        
         <section class="redes">
             <h2>Redes</h2>
-            <p>
-            Descubre nuestras creaciones en carpintería y decoración en Instagram y Facebook. Conéctate emocionalmente con objetos únicos de calidad. Únete para seguir nuestro proceso creativo y no te pierdas las últimas novedades. Haz de Campichuelo parte de tu hogar🔨🏡
-                </p>
-                <div class="redes-icon">
-                    <a href="https://www.instagram.com/campichuelo/"><img src="img/instagram.png" alt="Instagram"></a>
-                    <a href="https://www.facebook.com/campichuelo/"><img src="img/facebook.png" alt="facebook"></a>
-                    <a href="https://wa.me/549113077-7777"><img src="img/whatsapp.png" alt="whatsapp"></a>
-                </div>
-        </section>
-        <section class="producto-destacados">
-            <h2>Productos destacados</h2>
-            <div class="content">
-                <div class="content">
-                    <div class="producto">
-                        <a href="img/producto-mesa-x_2.jpg" data-lightbox="galeria">
-                            <img src="img/producto-mesa-x_2.jpg" alt="">
-                        </a>
-                        <h3>Mueble x</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In architecto voluptatibus blanditiis repellendus quam dolor quas officia doloremque! At reprehenderit nobis, quo assumenda itaque voluptatem ea ipsum reiciendis vel labore.</p>
-                        <a href="productos.html">Ver más</a>
-                    </div>
-                    <!-- Repite para cada producto -->
-                </div>
-                <div class="producto">
-                    <img src="img/producto-mesa-x.jpg" alt="">
-                    <h3>Mueble nombre x</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, repellendus odit odio dolores quod nesciunt harum, sed id laboriosam consectetur rerum accusamus dolore omnis sequi vero ea eaque. Voluptas, doloremque.</p>
-                    <a href="producto.html">Ver más</a>
-                <div>
-                <div class="producto">
-                    <img src="img/IMG-20220627-WA0009.jpg" alt="">
-                    <h3>Nombre del producto</h3>
-                    <p>Descripción del producto</p>
-                    <a href="producto.html">Ver más</a>
-                </div>
-                <div class="producto">
-                    <img src="img/IMG-20220627-WA0009.jpg" alt="">
-                    <h3>Nombre del producto</h3>
-                    <p>Descripción del producto</p>
-                    <a href="producto.html">Ver más</a>
-                </div>
-                <div class="producto">
-                    <img src="img/IMG-20220627-WA0009.jpg" alt="">
-                    <h3>Nombre del producto</h3>
-                    <p>Descripción del producto</p>
-                    <a href="producto.html">Ver más</a>
-                </div>
-                <div class="producto">
-                    <img src="img/IMG-20220627-WA0009.jpg" alt="">
-                    <h3>Nombre del producto</h3>
-                    <p>Descripción del producto</p>
-                    <a href="producto.html">Ver más</a>
-                </div>
-                <div class="producto">
-                    <img src="img/IMG-20220627-WA0009.jpg" alt="">
-                    <h3>Nombre del producto</h3>
-                    <p>Descripción del producto</p>
-                    <a href="producto.html">Ver más</a>
+            <div class="redes-icon">
+                <a href="https://www.instagram.com/campichuelo/"><img src="img/instagram.png" alt="Instagram"></a>
+                <a href="https://www.facebook.com/campichuelo/"><img src="img/facebook.png" alt="facebook"></a>
+                <a href="https://wa.me/549113077-7777"><img src="img/whatsapp.png" alt="whatsapp"></a>
             </div>
-
-            <div>
-                <button class="boton-ver-mas">
-                    <a href="productos.html">Ver todos los productos</a>
-                </button>
-            </div>
-
-
-
-
-
         </section>
-    </main>
+        
+        
+        <a href="https://wa.me/5491155983715" target="_blank" class="whatsapp-button">
+            <img src="img/whatsapp.derecha.png" alt="Icono de WhatsApp">
+        </a>
+        
+        
+    </section>
+</main>
 </div>
-    <footer>
-        <div class="content">
-            <div class="contacto">
-                <h3>Contacto</h3>
-                <p>Whatsapp: <a href="https://wa.me/549113077-7777">+54 9 11 3077-7777</p></a> 
-                <p>Mail: <a href="mailto:"></a>
-    </footer>
-<script src="java.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
+<footer>
+    <div class="content">
+        <div class="contacto">
+            <h3>Contacto</h3>
+            <p>Whatsapp: <a href="https://wa.me/5491155983715">+54 9 11 3077-7777</p></a> 
+            <p>Mail: <a href="mailto:campichuelomuebles@gmail.com">Campichuelomuebles@gmail.com</a>
+            </footer>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
+            <script src="java.js"></script>
         </body>
         </html>
