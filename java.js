@@ -29,7 +29,8 @@ document.getElementById('menu-close-button').addEventListener('click', function(
     const imagenes = [
         'img/foto-carrusel mesa-sillas.png',
         'img/foto-carrusel-1.png',
-        'img/fotp-carrusel mueble matero.png',
+        'img/foto-carrusel rack tv master.png',
+        'img/foto-carrusel isla.png',
         // Agrega más rutas de imágenes según sea necesario
     ];
 
@@ -48,7 +49,7 @@ document.getElementById('menu-close-button').addEventListener('click', function(
 
     // Cambia la imagen automáticamente cada 3.5 segundos
     setInterval(function() {
-        cambiarImagen(1);
+        cambiarImagen(0);
     }, 3500);
 
     // Inicializa la imagen del carrusel
@@ -61,3 +62,32 @@ document.getElementById('menu-close-button').addEventListener('click', function(
     document.getElementById('adelante').addEventListener('click', function() {
         cambiarImagen(1);
     });
+
+
+
+    //cargar productos
+let productos = [];
+
+fetch("productos.json")
+    .then(response => response.json())
+    .then(data => {
+        productos = data;
+        cargarProductos(productos);
+    })
+
+function cargarProductos(productos){
+    const contenedorProductos = document.getElementById("contenedor-productos"); // Asegúrate de tener un elemento con este id en tu HTML
+
+    productos.forEach(producto => {
+        let div = document.createElement('div');
+        div.classList.add("producto");
+        div.innerHTML = `
+            <img src="${producto.imagen}" alt="">
+            <h3>${producto.nombre}</h3>
+            <p>${producto.precio}</p>
+            <p>${producto.descripcion}</p>
+        `;
+        contenedorProductos.appendChild(main);
+    });
+}
+
