@@ -51,7 +51,7 @@ body {
 }
 
 .mobile-logo {
-    width: 300px;
+    width: 200px;
     color: var(--secondary-color);
 }
 
@@ -75,7 +75,7 @@ body {
     right: 0;
     width: 45%;
     height: 100vh;
-    background-color:var(--primary-dark-color);
+    background-color:var(--white-color);
     color: #000000;
     padding: 20px;
     box-sizing: border-box;
@@ -172,10 +172,11 @@ section {
     text-align: center;
     color: var(--black);
     padding: 20px;
-    background-color:var(--primary-color);
-    border-radius: 10px;
+    background-color: var(--primary-color);
+    border-radius: 0px; /* Hace los bordes cuadrados */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
+    border: 1px solid black;
 }
 
 .card:hover, .card:active {
@@ -200,6 +201,7 @@ section {
 .banner {
     background-color: var(--secondary-color);
     color: var(--color-primario);
+
 }
 
 /* Ajustes para dispositivos móviles */
@@ -308,3 +310,79 @@ footer {
 }
 
 
+/*envios*/
+.titulo-sub-paginas{
+    text-align: center;
+    margin: 0 auto;
+    font-size: 6rem; /* Aumenta aún más el tamaño de la fuente */
+    color: #333;
+    padding: 20px 0;
+    width: 80%; /* Añade un ancho específico */
+    margin: 0 auto; /* Centra el título */
+}
+.section-subpaginas {
+    margin-bottom: 30px;
+    background-color: var(--primary-color);
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0; /* Hace los bordes cuadrados */
+}
+
+.section-subpaginas h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.section-subpaginas p{
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.section-subpaginas ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.section-subpaginas ul li{
+    margin-bottom: 10px;
+    color: #333;
+}
+
+    .img-fluid {
+        width: 426px;
+        margin: 0 auto;
+    }
+
+    .img-fluid img {
+        height: auto;
+    }
+
+    .titulo-sub-paginas{
+        text-align: center;
+        margin: 0 auto;
+        font-size: 3rem;
+        color: #333;
+        padding: 20px 0;
+    }
+
+    .info-section {
+        margin-bottom: 30px;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+        padding: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .info-section h2 {
+        color: #333;
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .info-section p {
+        font-size: 16px;
+        line-height: 1.6;
+        color: #666;
+    }
