@@ -1,3 +1,4 @@
+//abrir el boton de menu
 class Menu {
     constructor(menuId, toggleButtonId) {
         this.menuElement = document.getElementById(menuId);
@@ -40,26 +41,20 @@ $('.dropdown-menu a.dropdown-toggle').on('click', function(e) {
 });
 
     //cargar productos
-let productos = [];
 
-fetch("productos.json")
+fetch('productos.json')
     .then(response => response.json())
-    .then(data => {
-        productos = data;
-        cargarProductos(productos);
+    .then(productos => {
+        const contenedorProductos = document.getElementById('contenedor-productos');
+        productos.forEach(producto => {
+            contenedorProductos.innerHTML += `
+                <div>
+                    <img src="${producto.imagen}" alt="${producto.nombre}" />
+                    <h3>${producto.nombre}</h3>
+                    <p>${producto.precio}</p>
+                    <p>${producto.descripcion}</p>
+                </div>
+            `;
+        });
     })
-
-function cargarProductos(productos){
-    const contenedorProductos = document.getElementById("contenedor-productos"); // Asegúrate de tener un elemento con este id en tu HTML
-
-    productos.forEach(producto => {
-        div.innerHTML += `
-            <img src="${producto.imagen}" alt="">
-            <h3>${producto.nombre}</h3>
-            <p>${producto.precio}</p>
-            <p>${producto.descripcion}</p>
-        `;
-        contenedorProductos.appendChild(main);
-    });
-}
-
+    .catch(error => console.error('Error:', error));
