@@ -2,7 +2,7 @@
 const express = require('express');
 //importe ejs
 const ejs = require('ejs');
-//creamos una instancia de express
+//cree una instancia de express
 const app = express();
 
 const port = 3000;

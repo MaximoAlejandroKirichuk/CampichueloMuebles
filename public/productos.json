@@ -2,12 +2,12 @@
     {
         "id": "abrigo-01",
         "titulo": "Abrigo 01",
-        "imagen": "img/facebook.png",
+        "imagen": "/img/producto-mesa-x_2.jpg",
         "categoria": {
             "nombre": "Abrigos",
             "id": "abrigos"
-        },
-        "precio": 1000
+        }
+
     },
     {
         "id": "abrigo-02",

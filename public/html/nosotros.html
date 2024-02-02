@@ -9,26 +9,26 @@
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-        <link rel="stylesheet" href="normalize.css">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/css/style.css">
     </head>
     <body>
         <header class="mobile-header">
             <div class="logo-container">
                 <a href="index.html">
-                    <img src="img/logo/Logo.png" class="mobile-logo" alt="Logo de la empresa">
+                    <img src="/img/logo/Logo.png" class="mobile-logo" alt="Logo de la empresa">
                 </a> 
             </div>
             
             <button id="menu-toggle-button" class="menu-toggle-button">
-                <img src="img/icon/icon-menu.png" alt="Icono para abrir el menú">
+                <img src="/img/icon/icon-menu.png" alt="Icono para abrir el menú">
             </button>
             
             <nav id="main-menu" class="main-menu">
                 <button id="menu-close-button" class="menu-close-button">
-                    <img src="img/icon/icon-close.png" alt="Icono para cerrar el menú"></button>
+                    <img src="/img/icon/icon-close.png" alt="Icono para cerrar el menú"></button>
                 <ul class="navigation-list">
-                    <a href="/nosotros.html">Nosotros</a>
+                    <li><a href="html/nosotros.html">Nosotros</a></li>
                     <li>
                         <div class="dropdown">
                             <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown">
@@ -40,47 +40,46 @@
                                         <button class="dropdown-toggle" type="button" aria-expanded="false">
                                             Mesa de comedor y sillas
                                         </button>
-                                        <ul class="dropdown-menu">
-                                            <li><button class="dropdown-item" type="button">Mesa X</button></li>
-                                            <li><button class="dropdown-item" type="button">Mesa(U)</button></li>
-                                            <li><button class="dropdown-item" type="button">Mesa V</button></li>
-                                            <li><button class="dropdown-item" type="button">Mesa Tradicional 4 patas</button></li>
-                                            <li><button class="dropdown-item" type="button">Mesa Triangulos</button></li>
-                                            <li><button class="dropdown-item" type="button">Invertidos</button></li>
-                                            <li><button class="dropdown-item" type="button">Mesa W</button></li>
-                                            <li><button class="dropdown-item" type="button">Mesa Doble X</button></li>
-                                            <li><button class="dropdown-item" type="button">Mesa X</button></li>
+                                        <ul class=>
+                                            <li><a href="#">Mesa X</a></li>
+                                            <li><a href="#">Mesa(U)</a></li>
+                                            <li><a href="#">Mesa Tradicional 4 patas</a></li>
+                                            <li><a href="#">Mesa Triangulos</a></li>
+                                            <li><a href="#">Invertidos</a></li>
+                                            <li><a href="#">Mesa W</a></li>
+                                            <li><a href="#">Mesas W</a></li>
+                                            <li><a href="#">Mesa Doble x</a></li>
                                         </ul>
                                     </div>
                                 </li>
-                                <li><button class="dropdown-item" type="button">Otro producto</button></li>
-                                <li><button class="dropdown-item" type="button">Some</button></li>
                             </ul>
                         </div>
                     </li>
-                    <li><a href="/Garantia.html">Garantía</a></li>
-                    <li><a href="/cuidados-muebles.html">Cuidados</a></li>
-                    <li><a href="/envios.html">Plazos de fabricación y Envios</a></li>
-                </ul>       
+                    <li><a href="html/Garantia.html">Garantía</a></li>
+                    <li><a href="html/cuidados-muebles.html">Cuidados</a></li>
+                    <li><a href="html/envios.html">Plazos de fabricación y Envios</a></li>
+                </ul>   
             </nav>
             </header>
+            <div id="overlay" style="display: none; position: fixed; width: 100%; height: 100%; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0,0,0,0.5); z-index: 2;"></div>       
             <div class="container">
         <main>
-            <section class="section-subpaginas">
-                <h2 class="titulo-sub-paginas">Sobre Nosotros</h2>
-                <div class="nosotros">
-                    <p>Tallamos sueños, moldeamos ideas, creamos donde vamos. Nuestro motor es la pasión por lo que hacemos, te garantizamos calidad y calidez, de nuestras manos a tu hogar objetos de carpintería y deco que conectan.</p>
-                    <p>Creemos en el poder de los espacios que habitamos, en las cosas bien hechas, en los valores tradicionales y sobre todo en personas hechas de “buena madera”.</p>
-                    <p>La pasión por la madera, la confección de objetos útiles para nuestro hogar con propósito y calidad da origen a Campichuelo, donde el diseño de autor y la creación de muebles se conjugan para habitar tu hogar.</p>
-                    <p>Conservamos lo autóctono de la materia prima, trabajamos hasta la perfección y apostamos a la innovación. Amamos convertir un diseño en productos reales funcionales y estéticos para tu hogar.</p>
-                    <p>Los invitamos a Campichuelo un espacio de creación para tu lugar.</p>
+            <section class="nosotros relative bg-gray-100 p-6 rounded-lg shadow-lg">
+                <div class="absolute inset-0 bg-black opacity-50"></div>
+                <h2 class="titulo-sub-paginas text-2xl font-bold mb-4 z-10 text-white">Sobre Nosotros</h2>
+                <div class="z-10">
+                    <p class="text-center text-white font-bold mb-2 z-10 text-lg leading-relaxed text-pretty">La pasión por la madera, la confección de objetos útiles para nuestro hogar con propósito y calidad da origen a Campichuelo, donde el diseño de autor y la creación de muebles se conjugan para habitar tu hogar.
+                        Tallamos sueños, moldeamos ideas, creamos donde vamos. Nuestro motor es la pasión por lo que hacemos, te garantizamos calidad y calidez, de nuestras manos a tu hogar objetos de carpintería y deco que conectan.
+                        Creemos en el poder de los espacios que habitamos, en las cosas bien hechas, en los valores tradicionales y sobre todo en personas hechas de “buena madera”.
+                        Conservamos lo autóctono de la materia prima, trabajamos hasta la perfección y apostamos a la innovación. Amamos convertir un diseño en productos reales funcionales y estéticos para tu hogar.
+                    </p>
                 </div>
             </section>
         </main>
 </div>
     
     <a href="https://wa.me/5491155983715" target="_blank" class="whatsapp-button">
-        <img src="img/redes/whatsapp.derecha.png" alt="Icono de WhatsApp">
+        <img src="/img/redes/whatsapp.derecha.png" alt="Icono de WhatsApp">
     </a>
     
     <footer>
@@ -93,6 +92,6 @@
                 
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
-                <script src="java.js"></script>
+                <script src="/js/java.js"></script>
 </body>
 </html>

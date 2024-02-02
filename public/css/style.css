@@ -104,23 +104,109 @@ body {
     text-decoration: none;
 }
 
-.dropdown-menu{
+
+
+
+/*Productos*/
+
+.sub-menu{
     display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 45%;
+    height: 100vh;
+    background-color:var(--white-color);
     color: #000000;
-    padding: 0px;
+    padding: 20px;
     box-sizing: border-box;
+    overflow-y: auto;
     transition: transform 0.3s ease-in-out;
     z-index: 9;
 }
 
-.dropdown-menu-dark{
-    background-color: var(--primary-dark-color);
+.sub-menu.show{
+    display: block;
+}
+
+/*sub-menu-mesas-comedor-sillas*/
+.sub-menu-mesas-comedor-sillas{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 45%;
+    height: 100vh;
+    background-color:var(--white-color);
     color: #000000;
+    padding: 20px;
     box-sizing: border-box;
+    overflow-y: auto;
+    transition: transform 0.3s ease-in-out;
+    z-index: 9;
+}
+.sub-menu-mesas-comedor-sillas.show{
+    display: block;
+}
+
+/*ESTILO INDUSTRIAL*/
+.boton-estilo-industrial{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 45%;
+    height: 100vh;
+    background-color:var(--white-color);
+    color: #000000;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    transition: transform 0.3s ease-in-out;
+    z-index: 9;
+}
+.boton-estilo-industrial.show{
+    display: block;
+}
+.listado-productos-industrial {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 45%;
+    height: 100vh;
+    background-color:var(--white-color);
+    color: #000000;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
     transition: transform 0.3s ease-in-out;
     z-index: 9;
 }
 
+.listado-productos-industrial.show {
+    display: block;
+}
+
+.listado-productos-todo-madera{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 45%;
+    height: 100vh;
+    background-color:var(--white-color);
+    color: #000000;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    transition: transform 0.3s ease-in-out;
+    z-index: 9;
+}
+.listado-productos-industrial.show{
+    display: block;
+
+}
 /* cerrar aside */
 .menu-close-button{
     background: none;
@@ -142,93 +228,33 @@ body {
 .carousel-control-next-icon {
     background-color:var(--secondary-color); /* Green */
 }
-.visually-hidden{
-    color: #000;
+
+.carousel-item img {
+    object-fit: cover;
 }
 
 /* Main */
 
-
-section {
-    padding: 30px;
-}
-
-.informacion-pago {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px 0;
-    border-radius: 10px;
-    grid-template-columns: 1fr;
-}
-
-.card {
-    text-align: center;
-    color: var(--black);
+.main {
     padding: 20px;
-    background-color: var(--primary-color);
-    border-radius: 0px; /* Hace los bordes cuadrados */
+    background-color: var(--white-color);
+    color: #000000;
+    margin-bottom: 30px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-    border: 1px solid black;
+    border-radius: 0; /* Hace los bordes cuadrados */
 }
-
-.card:hover, .card:active {
-    transform: scale(1.05);
-}
-
-.card h2 {
-    margin-bottom: 10px;
-    transition: color 0.3s ease-in-out;
-}
-
-.card:hover h2, .card:active h2 {
-    color: var(--color-primario);
-}
-
-.card span {
-    display: block;
-    font-size: 0.8em;
-    color: #777;
-}
-
-.banner {
-    background-color: var(--secondary-color);
-    color: var(--color-primario);
-
-}
-
-/* Ajustes para dispositivos móviles */
-@media (max-width: 600px) {
-    .informacion-pago {
-        flex-direction: column;
-    }
-
-    .card {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-}
-.info-envios{
+.fotos-texto{
+    background-position: center;
+    background-size: cover;
+    position: relative;
     display: flex;
-    justify-content: space-around;
-    background-color: #f9f9f9;
-    padding: 20px 0;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    color: #000;
+    align-items: center;
+    justify-content: center;
 }
-
-
-.info-envios h2 {
-    transition: color 0.3s ease-in-out;
+.mesas {
+    background-image: url('/img/section-info/sillas-mesas.jpg');
+    height: 30vh;
 }
-
-.info-envios:hover h2, .info-envios:active h2 {
-    color: var(--color-primario);
-}
-
-/*REDES SOCIALES*/
 
 .redes {
     display: flex;
@@ -302,12 +328,36 @@ footer {
     flex-direction: column; /* Añade esto para que los elementos estén uno debajo del otro */
 }
 
+/*Nosotros*/
+.nosotros {
+    background-image: url('/img/nosotros.jpg');
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
 
+.nosotros::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Añade una superposición oscura */
+    z-index: 1;
+}
+
+.titulo-sub-paginas, .nosotros div {
+    position: relative;
+    z-index: 2;
+}
 /*SUB-PAGINAS*/
 .titulo-sub-paginas{
     text-align: center;
     margin: 0 auto;
-    font-size: 6rem; /* Aumenta aún más el tamaño de la fuente */
+    font-size: 0.3rem; /* Reduce el tamaño de la fuente */
     color: #333;
     padding: 20px 0;
     width: 80%; /* Añade un ancho específico */
@@ -330,12 +380,11 @@ footer {
 .section-subpaginas p{
     font-size: 16px;
     line-height: 1.6;
-    color: #666;
+    color: #000000;
 }
 
 .section-subpaginas ul {
     list-style-type: disc;
-    margin-left: 20px;
 }
 
 .section-subpaginas ul li{
@@ -353,7 +402,7 @@ footer {
         margin: 0 auto;
         font-size: 3rem;
         color: #333;
-        padding: 20px 0;
+        
     }
 
     .info-section {
