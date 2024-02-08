@@ -15,7 +15,7 @@ app.get("/", (req, res) =>{
 });
 
 
-// Establecer la carpeta 'public' como carpeta estática
+// carpeta 'public' como carpeta estática
 app.use(express.static('public'));
 
 

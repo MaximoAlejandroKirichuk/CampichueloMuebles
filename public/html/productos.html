@@ -16,49 +16,62 @@
         <header class="mobile-header">
             <div class="logo-container">
                 <a href="index.html">
-                    <img src="img/Logo.png" class="mobile-logo" alt="Logo de la empresa">
+                    <img src="/img/logo/Logo.png" class="mobile-logo" alt="Logo de la empresa">
                 </a> 
             </div>
             
             <button id="menu-toggle-button" class="menu-toggle-button">
-                <img src="img/icon-menu.png" alt="Icono para abrir el menú">
+                <img src="/img/icon/icon-menu.png" alt="Icono para abrir el menú">
             </button>
             
             <nav id="main-menu" class="main-menu">
                 <button id="menu-close-button" class="menu-close-button">
-                    <img src="img/icon-close.png" alt="Icono para cerrar el menú"></button>
-                    <ul class="navigation-list">
-                        <li><a href="nosotros.html">Nosotros</a></li>
-                        <li><a href="productos.html">Productos</a></li>
-                        <li><a href="Garantia.html">Garantía y cuidados</a></li>
-                    </ul>       
-                </nav>
+                    <img src="/img/icon/icon-close.png" alt="Icono para cerrar el menú"></button>
+                <ul class="navigation-list">
+                    <li><a href="html/nosotros.html">Nosotros</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                Productos
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle" type="button" aria-expanded="false">
+                                            Mesa de comedor y sillas
+                                        </button>
+                                        <ul class=>
+                                            <li><a href="#">Mesa X</a></li>
+                                            <li><a href="#">Mesa(U)</a></li>
+                                            <li><a href="#">Mesa Tradicional 4 patas</a></li>
+                                            <li><a href="#">Mesa Triangulos</a></li>
+                                            <li><a href="#">Invertidos</a></li>
+                                            <li><a href="#">Mesa W</a></li>
+                                            <li><a href="#">Mesas W</a></li>
+                                            <li><a href="#">Mesa Doble x</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="html/Garantia.html">Garantía</a></li>
+                    <li><a href="html/cuidados-muebles.html">Cuidados</a></li>
+                    <li><a href="html/envios.html">Plazos de fabricación y Envios</a></li>
+                </ul>   
+            </nav>
             </header>
-            <div class="content">
-                    <nav>
-                        <ul class="menu">
-                            <li>
-                                <button id="todos" class="boton-menu boton-categoria active"><i class="bi bi-hand-index-thumb-fill"></i> Todos los productos</button>
-                            </li>
-                            <li>
-                                <button id="abrigos" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Abrigos</button>
-                            </li>
-                            <li>
-                                <button id="camisetas" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Camisetas</button>
-                            </li>
-                            <li>
-                                <button id="pantalones" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Pantalones</button>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-
+            <div id="overlay" style="display: none; position: fixed; width: 100%; height: 100%; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0,0,0,0.5); z-index: 2;"></div> 
+            
+            <div class="container wrap-productos">
                 <main>
-                    <h2 class="titulo-principal" id="titulo-principal">Todos los productos</h2>
-                    <div id="contenedor-productos" class="contenedor-productos">
-                        <!-- Esto se va a rellenar con JS -->
+                    <h2 class="titulo-principal" >Todos los productos</h2>
+                        <div id="contenedor-productos" class="productos">
                     </div>
-                </main>
+                        <!-- Esto se va a rellenar con JS -->
+                            <!-- Repite el div para cada producto -->
+                    </main>
+                </div>
             <footer>
                 <div class="content">
                     <div class="contacto">
@@ -72,3 +85,5 @@
                         <script src="/js/productos.js"></script>
     </body>
 </html>
+
+

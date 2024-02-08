@@ -73,13 +73,54 @@ estiloIndustrial.addEventListener('click', function() {
 });
 
 
-//boton de Todo madera
-let todoMadera = document.getElementById('boton-todo-madera');
-let submenuTodoMadera = document.getElementById('listado-productos-todo-madera');
-todoMadera.addEventListener('click', function() {
-    if (submenuTodoMadera.classList.contains('show')) {
-        submenuTodoMadera.classList.remove('show');
+// boton de Todo madera
+let botonTodoMadera = document.getElementById('boton-estilo-todo-madera');
+let submenuTodoMaderaLista = document.getElementById('listado-productos-todo-madera');
+
+botonTodoMadera.addEventListener('click', function () {
+    submenuTodoMaderaLista.classList.toggle('show');
+});
+
+
+
+//BOTON ATRAS MENU
+let botonAtras = document.getElementById('boton-volver-atras-productos');
+botonAtras.addEventListener('click', function(){
+    if (submenu.classList.remove('show')) {
+        submenu.classList.contains('show');
     } else {
-        submenuTodoMadera.classList.add('show');
+        submenu.classList.remove('show');
     }
 });
+
+//BOTON ATRAS PRODUCTOS ESTILOS
+let botonAtrasProductosEstilos =document.getElementById('boton-para-atras-productos-estilos')
+botonAtrasProductosEstilos.addEventListener('click', function() {
+    if (submenuMesas.classList.remove('show')) {
+        submenuMesas.classList.contains('show');
+    } else {
+        submenuMesas.classList.remove('show');
+    }
+});
+
+//BOTON ATRAS PRODUCTOS ESTILO INDUSTRIAL
+let botonAtrasProductosEstiloIndustrial= document.getElementById('boton-volver-atras-productos-estilos-estilo-industrial')
+botonAtrasProductosEstiloIndustrial.addEventListener('click', function(){
+    if (submenuEstiloIndustrial.classList.remove('show')) {
+        submenuEstiloIndustrial.classList.contains('show');
+    } else {
+        submenuEstiloIndustrial.classList.remove('show');
+    }
+})
+
+
+//BOTON ATRAS PRODUCTOS ESTILO TODO MADERA
+let botonAtrasProductosEstiloTodoMadera = document.getElementById('boton-volver-atras-productos-estilos-todo-madera')
+botonAtrasProductosEstiloTodoMadera.addEventListener('click',function(){
+    botonAtrasProductosEstiloTodoMadera.addEventListener('click', function () {
+        submenuTodoMaderaLista.classList.remove('show');
+    });
+})    
+
+
+
