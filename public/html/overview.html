@@ -5,9 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Comprá productos de Casa y Jardín por internet. Tenemos adicionales, mesas, bancos y sillas y más. Hacé tu pedido y pagalo online.">
         <title>Campichuelo</title>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <link rel="stylesheet" href="/css/normalize.css">
         <link rel="stylesheet" href="/css/style.css">
@@ -25,68 +24,78 @@
             </button>
             
             <nav id="main-menu" class="main-menu">
-                <button id="menu-close-button" class="menu-close-button">
-                    <img src="/img/icon/icon-close.png" alt="Icono para cerrar el menú"></button>
                 <ul class="navigation-list">
-                   <li><a href="nosotros.html">Nosotros</a></li>
+                    <button id="menu-close-button" class="menu-close-button" style="position: absolute; top: 5px; left: 5px; padding: 10px; border-radius: 50%;">
+                        <i class="bi bi-x-lg icon-close" style="font-size: 1.5em;"></i>
+                    </button>
+                    <li><a href="/html/nosotros.html">Nosotros</a></li>
+
                     <li>
-                        <div class="dropdown">
-                            <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                                Productos
+                        <button id="Boton-productos">Productos</a></button>
+                        <ul id="sub-menu" class="sub-menu">
+                            <button id="boton-volver-atras-productos">
+                                <i class="bi bi-arrow-left"></i>
                             </button>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <div class="dropdown">
-                                        <button class="dropdown-toggle" type="button" aria-expanded="false">
-                                            Mesa de comedor y sillas
-                                        </button>
-                                        <ul class="dropdown-menu">
-                                            <li><button class="dropdown-item" type="button">Mesa X</button></li>
-                                            <li><button class="dropdown-item" type="button">Mesa(U)</button></li>
-                                            <li><button class="dropdown-item" type="button">Mesa V</button></li>
-                                            <li><button class="dropdown-item" type="button">Mesa Tradicional 4 patas</button></li>
-                                            <li><button class="dropdown-item" type="button">Mesa Triangulos</button></li>
-                                            <li><button class="dropdown-item" type="button">Invertidos</button></li>
-                                            <li><button class="dropdown-item" type="button">Mesa W</button></li>
-                                            <li><button class="dropdown-item" type="button">Mesa Doble X</button></li>
-                                            <li><button class="dropdown-item" type="button">Mesa X</button></li>
+                            
+                                
+                                    <li><button id="boton-mesas-comedor">Mesas de comedor y sillas</button></li>
+                                    <li id="barras-islas-banquetas">Barra/islas</li>
+                                    <li id="tablas-de-asado">Tablas de asado</li>
+                                    <li id="rack">Racks</li>
+                                    <li><a href="/html/productos.html">Todos los productos</a></li>
+                            
+                            
+                                <ul id="sub-menu-mesas-comedor-sillas" class="sub-menu-mesas-comedor-sillas">
+                                    <button id="boton-para-atras-productos-estilos"><i class="bi bi-arrow-left"></i></button>
+                                    <li>
+                                        <button id="boton-estilo-industrial">Estilo industrial</button>
+
+                                        <ul id="listado-productos-industrial" class="listado-productos-industrial">
+                                            <button id="boton-volver-atras-productos-estilos-estilo-industrial"><i class="bi bi-arrow-left"></i></button>
+                                            <li><button><a href="">MESA X</a></button></li>
+                                            <li><button><a href="#">MESA TRADICIONAL 4 PATAS</a></button></li>
+                                            
                                         </ul>
-                                    </div>
-                                </li>
-                                <li><button class="dropdown-item" type="button">Otro producto</button></li>
-                                <li><button class="dropdown-item" type="button">Some</button></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li><a href="html/Garantia.html">Garantía</a></li>
-                    <li><a href="html/cuidados-muebles.html">Cuidados</a></li>
-                    <li><a href="html/envios.html">Plazos de fabricación y Envios</a></li>
+                                    </li>
+                                    <li>
+                                        <button id="boton-estilo-todo-madera">Todo madera</button>
+
+                                        <ul id="listado-productos-todo-madera" class="listado-productos-todo-madera">
+                                        <button id="boton-volver-atras-productos-estilos-todo-madera"><i class="bi bi-arrow-left"></i></button>
+                                            <li><a href=""></a>MESA REDONDA</li>
+                                            <li><a href=""></a>MESA ESTILO CAMPO</li>
+                                            
+                                    </li>
+                                        </ul>
+                        </ul>
+                        </ul>
+                        <li><a href="/html/Garantia.html">Garantía</a></li>
+                        <li><a href="/html/cuidados-muebles.html">Cuidados</a></li>
+                    <li><a href="/html/envios.html">Plazos de fabricación y Envios</a></li>
                 </ul>       
             </nav>
             </header>
             <div id="overlay" style="display: none; position: fixed; width: 100%; height: 100%; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0,0,0,0.5); z-index: 2;"></div> 
-                   
+            
             <div class="container">
-                <!--Lo voy a usar para poner informacion que pida el cliente-->
-                <div id="mostrar-informacion-overview" class="mostrar-informacion-overview">
+                <main>
 
-                </div>
+                    <!--Lo voy a usar para poner informacion que pida el cliente-->
+                    <div id="mostrar-informacion-overview" class="mostrar-informacion-overview">
+                        <!--aca se muestra la informacion-->
+                    </div>
+                </main>
             </div>
-
-
-
-
-<a href="https://wa.me/5491155983715" target="_blank" class="whatsapp-button">
-    <img src="/img/redes/whatsapp.derecha.png" alt="Icono de WhatsApp">
-</a>
-
-<footer>
-    <div class="content">
-        <div class="contacto">
-            <h3>Contacto</h3>
-            <p>Whatsapp: <a href="https://wa.me/5491155983715">+54 9 11 3077-7777</p></a> 
-            <p>Mail: <a href="mailto:campichuelomuebles@gmail.com">Campichuelomuebles@gmail.com</a>
-            </footer>
+            <a href="https://wa.me/5491155983715" target="_blank" class="whatsapp-button">
+                <img src="/img/redes/whatsapp.derecha.png" alt="Icono de WhatsApp">
+            </a>
+            <footer>
+                <div class="content">
+                    <div class="contacto">
+                        <h3>Contacto</h3>
+                        <p>Whatsapp: <a href="https://wa.me/5491155983715">+54 9 11 3077-7777</p></a> 
+                        <p>Mail: <a href="mailto:campichuelomuebles@gmail.com">Campichuelomuebles@gmail.com</a>
+                        </footer>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
             <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
             <script src="/js/java.js"></script>

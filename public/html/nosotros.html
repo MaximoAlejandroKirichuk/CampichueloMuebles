@@ -25,40 +25,55 @@
             </button>
             
             <nav id="main-menu" class="main-menu">
-                <button id="menu-close-button" class="menu-close-button">
-                    <img src="/img/icon/icon-close.png" alt="Icono para cerrar el menú"></button>
                 <ul class="navigation-list">
-                    <li><a href="html/nosotros.html">Nosotros</a></li>
+                    <button id="menu-close-button" class="menu-close-button" style="position: absolute; top: 5px; left: 5px; padding: 10px; border-radius: 50%;">
+                        <i class="bi bi-x-lg icon-close" style="font-size: 1.5em;"></i>
+                    </button>
+                    <li><a href="/html/nosotros.html">Nosotros</a></li>
+
                     <li>
-                        <div class="dropdown">
-                            <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                                Productos
+                        <button id="Boton-productos">Productos</a></button>
+                        <ul id="sub-menu" class="sub-menu">
+                            <button id="boton-volver-atras-productos">
+                                <i class="bi bi-arrow-left"></i>
                             </button>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <div class="dropdown">
-                                        <button class="dropdown-toggle" type="button" aria-expanded="false">
-                                            Mesa de comedor y sillas
-                                        </button>
-                                        <ul class=>
-                                            <li><a href="#">Mesa X</a></li>
-                                            <li><a href="#">Mesa(U)</a></li>
-                                            <li><a href="#">Mesa Tradicional 4 patas</a></li>
-                                            <li><a href="#">Mesa Triangulos</a></li>
-                                            <li><a href="#">Invertidos</a></li>
-                                            <li><a href="#">Mesa W</a></li>
-                                            <li><a href="#">Mesas W</a></li>
-                                            <li><a href="#">Mesa Doble x</a></li>
+                            
+                                
+                                    <li><button id="boton-mesas-comedor">Mesas de comedor y sillas</button></li>
+                                    <li id="barras-islas-banquetas">Barra/islas</li>
+                                    <li id="tablas-de-asado">Tablas de asado</li>
+                                    <li id="rack">Racks</li>
+                                    <li><a href="/html/productos.html">Todos los productos</a></li>
+                            
+                            
+                                <ul id="sub-menu-mesas-comedor-sillas" class="sub-menu-mesas-comedor-sillas">
+                                    <button id="boton-para-atras-productos-estilos"><i class="bi bi-arrow-left"></i></button>
+                                    <li>
+                                        <button id="boton-estilo-industrial">Estilo industrial</button>
+
+                                        <ul id="listado-productos-industrial" class="listado-productos-industrial">
+                                            <button id="boton-volver-atras-productos-estilos-estilo-industrial"><i class="bi bi-arrow-left"></i></button>
+                                            <li><button><a href="">MESA X</a></button></li>
+                                            <li><button><a href="#">MESA TRADICIONAL 4 PATAS</a></button></li>
+                                            
                                         </ul>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li><a href="html/Garantia.html">Garantía</a></li>
-                    <li><a href="html/cuidados-muebles.html">Cuidados</a></li>
-                    <li><a href="html/envios.html">Plazos de fabricación y Envios</a></li>
-                </ul>   
+                                    </li>
+                                    <li>
+                                        <button id="boton-estilo-todo-madera">Todo madera</button>
+
+                                        <ul id="listado-productos-todo-madera" class="listado-productos-todo-madera">
+                                        <button id="boton-volver-atras-productos-estilos-todo-madera"><i class="bi bi-arrow-left"></i></button>
+                                            <li><a href=""></a>MESA REDONDA</li>
+                                            <li><a href=""></a>MESA ESTILO CAMPO</li>
+                                            
+                                    </li>
+                                        </ul>
+                        </ul>
+                        </ul>
+                        <li><a href="/html/Garantia.html">Garantía</a></li>
+                        <li><a href="/html/cuidados-muebles.html">Cuidados</a></li>
+                    <li><a href="/html/envios.html">Plazos de fabricación y Envios</a></li>
+                </ul>       
             </nav>
             </header>
             <div id="overlay" style="display: none; position: fixed; width: 100%; height: 100%; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0,0,0,0.5); z-index: 2;"></div>       

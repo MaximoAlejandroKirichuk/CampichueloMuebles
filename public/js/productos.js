@@ -1,6 +1,7 @@
 // En la página de la lista de productos
 const contenedorProductos = document.getElementById('contenedor-productos');
-//lo estoy cargando de una forma dinamica atraves de un archivo json
+
+// Estoy cargando los productos de forma dinámica a través de un archivo JSON
 if (contenedorProductos) {
     function cargarProductos() {
         fetch('/productos.json')
@@ -9,18 +10,38 @@ if (contenedorProductos) {
                 productos.forEach(producto => {
                     contenedorProductos.innerHTML += `
                         <button onclick="location.href='/html/overview.html?id=${producto.id}'">
-                            <div class="producto">
-                            <img src="${producto.imagen}" alt="${producto.nombre}" />
-                            <h3>${producto.titulo}</h3>
+                            <div class="producto ${producto.categoria.nombre}">
+                                <img src="${producto.imagen.principal}" alt="${producto.titulo}" />
+                                <h3>${producto.titulo}</h3>
                             </div>
                         </button>
                     `;
                 });
+                generarBotonesFiltro(productos);
             })
             .catch(error => console.error('Error:', error));
     }
-//funcion para cargar los productos
+
+    // Función para cargar los productos
     cargarProductos();
 } else {
     console.error('Elemento contenedorProductos no encontrado');
 }
+
+// Abrir filtro
+const abrirFiltro = document.getElementById('boton-filtro');
+const Filtros = document.getElementById('filtros');
+
+abrirFiltro.addEventListener('click', function() {
+    Filtros.classList.toggle('show');
+    document.getElementById('overlay-filtro').style.display = Filtros.classList.contains('show') ? 'block' : 'none';
+});
+
+// Cerrar filtro
+const botonParaAtrasProductosFiltro = document.getElementById('boton-atras-filtro');
+
+botonParaAtrasProductosFiltro.addEventListener('click', function() {
+    Filtros.classList.remove('show');
+    document.getElementById('overlay-filtro').style.display = 'none';
+});
+

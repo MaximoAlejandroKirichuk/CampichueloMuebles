@@ -23,44 +23,55 @@
             <button id="menu-toggle-button" class="menu-toggle-button">
                 <img src="/img/icon/icon-menu.png" alt="Icono para abrir el menú">
             </button>
-            
             <nav id="main-menu" class="main-menu">
-                <button id="menu-close-button" class="menu-close-button">
-                    <img src="/img/icon/icon-close.png" alt="Icono para cerrar el menú"></button>
                 <ul class="navigation-list">
-                   <li><a href="html/nosotros.html">Nosotros</a></li>
+                    <button id="menu-close-button" class="menu-close-button" style="position: absolute; top: 5px; left: 5px; padding: 10px; border-radius: 50%;">
+                        <i class="bi bi-x-lg icon-close" style="font-size: 1.5em;"></i>
+                    </button>
+                    <li><a href="/html/nosotros.html">Nosotros</a></li>
+
                     <li>
-                        <div class="dropdown">
-                            <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                                Productos
+                        <button id="Boton-productos">Productos</a></button>
+                        <ul id="sub-menu" class="sub-menu">
+                            <button id="boton-volver-atras-productos">
+                                <i class="bi bi-arrow-left"></i>
                             </button>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <div class="dropdown">
-                                        <button class="dropdown-toggle" type="button" aria-expanded="false">
-                                            Mesa de comedor y sillas
-                                        </button>
-                                        <ul class="dropdown-menu">
-                                            <li><button class="dropdown-item" type="button">Mesa X</button></li>
-                                            <li><button class="dropdown-item" type="button">Mesa(U)</button></li>
-                                            <li><button class="dropdown-item" type="button">Mesa V</button></li>
-                                            <li><button class="dropdown-item" type="button">Mesa Tradicional 4 patas</button></li>
-                                            <li><button class="dropdown-item" type="button">Mesa Triangulos</button></li>
-                                            <li><button class="dropdown-item" type="button">Invertidos</button></li>
-                                            <li><button class="dropdown-item" type="button">Mesa W</button></li>
-                                            <li><button class="dropdown-item" type="button">Mesa Doble X</button></li>
-                                            <li><button class="dropdown-item" type="button">Mesa X</button></li>
+                            
+                                
+                                    <li><button id="boton-mesas-comedor">Mesas de comedor y sillas</button></li>
+                                    <li id="barras-islas-banquetas">Barra/islas</li>
+                                    <li id="tablas-de-asado">Tablas de asado</li>
+                                    <li id="rack">Racks</li>
+                                    <li><a href="/html/productos.html">Todos los productos</a></li>
+                            
+                            
+                                <ul id="sub-menu-mesas-comedor-sillas" class="sub-menu-mesas-comedor-sillas">
+                                    <button id="boton-para-atras-productos-estilos"><i class="bi bi-arrow-left"></i></button>
+                                    <li>
+                                        <button id="boton-estilo-industrial">Estilo industrial</button>
+
+                                        <ul id="listado-productos-industrial" class="listado-productos-industrial">
+                                            <button id="boton-volver-atras-productos-estilos-estilo-industrial"><i class="bi bi-arrow-left"></i></button>
+                                            <li><button><a href="">MESA X</a></button></li>
+                                            <li><button><a href="#">MESA TRADICIONAL 4 PATAS</a></button></li>
+                                            
                                         </ul>
-                                    </div>
-                                </li>
-                                <li><button class="dropdown-item" type="button">Otro producto</button></li>
-                                <li><button class="dropdown-item" type="button">Some</button></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li><a href="html/Garantia.html">Garantía</a></li>
-                    <li><a href="html/cuidados-muebles.html">Cuidados</a></li>
-                    <li><a href="html/envios.html">Plazos de fabricación y Envios</a></li>
+                                    </li>
+                                    <li>
+                                        <button id="boton-estilo-todo-madera">Todo madera</button>
+
+                                        <ul id="listado-productos-todo-madera" class="listado-productos-todo-madera">
+                                        <button id="boton-volver-atras-productos-estilos-todo-madera"><i class="bi bi-arrow-left"></i></button>
+                                            <li><a href=""></a>MESA REDONDA</li>
+                                            <li><a href=""></a>MESA ESTILO CAMPO</li>
+                                            
+                                    </li>
+                                        </ul>
+                        </ul>
+                        </ul>
+                        <li><a href="/html/Garantia.html">Garantía</a></li>
+                        <li><a href="/html/cuidados-muebles.html">Cuidados</a></li>
+                    <li><a href="/html/envios.html">Plazos de fabricación y Envios</a></li>
                 </ul>       
             </nav>
             </header>

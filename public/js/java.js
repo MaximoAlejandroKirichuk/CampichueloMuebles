@@ -121,6 +121,3 @@ botonAtrasProductosEstiloTodoMadera.addEventListener('click',function(){
         submenuTodoMaderaLista.classList.remove('show');
     });
 })    
-
-
-
