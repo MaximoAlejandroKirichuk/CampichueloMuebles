@@ -9,18 +9,18 @@ if (contenedorProductos) {
             .then(productos => {
                 productos.forEach(producto => {
                     contenedorProductos.innerHTML += `
-                        <button onclick="location.href='/html/overview.html?id=${producto.id}'">
-                            <div class="producto ${producto.categoria.nombre}">
+                        <button  data-categoria="${producto.categoria.nombre}" class="producto" onclick="location.href='/html/overview.html?id=${producto.id}'">
+                            <div>
                                 <img src="${producto.imagen.principal}" alt="${producto.titulo}" />
                                 <h3>${producto.titulo}</h3>
                             </div>
                         </button>
                     `;
                 });
-                generarBotonesFiltro(productos);
             })
             .catch(error => console.error('Error:', error));
     }
+    
 
     // Función para cargar los productos
     cargarProductos();

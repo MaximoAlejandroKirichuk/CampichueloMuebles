@@ -1,27 +1,31 @@
 // hice este archivo para que pueda ver el codigo de los filtros, la idea es que se pueda ver los filtros de una manera mas clara y sencilla.(ya que queda mucho espacio entre estos)
 
 //cuando solucione este problema voy a corregir las rutas de mi aside.(que cuando el usuario haga click por ejemplo en el boton de todo madera, se despliegue justamente la categoria todo madera)
+// Selecciona todos los botones de filtro
+// Selecciona todos los botones de filtro
+const botonesFiltro = document.querySelectorAll('.botones-filtro');
 
-// Filtrar por categoría
-function generarBotonesFiltro(productos) {
-    const categorias = [...new Set(productos.map(producto => producto.categoria.nombre))];
+botonesFiltro.forEach(boton => {
+    boton.addEventListener('click', () => {
+        const categoria = boton.id;
 
-    categorias.forEach(categoria => {
-        const botonFiltro = `<button class="" id="${categoria}">${categoria}</button>`;
-        $('#lista-filtros').append(botonFiltro);
-    });
+        // Selecciona todos los divs de los productos
+        const productos = document.querySelectorAll('.producto');
 
-    // Añade un controlador de eventos de clic a cada botón
-    $('#lista-filtros button').each((_, boton) => {
-        $(boton).on('click', () => {
-            // Obtén la categoría del botón que se hizo clic
-            const categoria = boton.id;
-
-            // Oculta todos los productos
-            $('.producto').hide();
-
-            // Muestra solo los productos que coinciden con la categoría seleccionada
-            $(`.producto.${categoria}`).show();
+        // Itera sobre los productos y cambia su estilo de visualización en función de la categoría seleccionada
+        productos.forEach(producto => {
+            const categoriaProducto = producto.dataset.categoria; // Obtener la categoría del producto desde su dataset
+            if (categoria === 'Todos' || categoria === categoriaProducto) {
+                producto.style.display = 'block'; // Mostrar el producto
+            } else {
+                producto.style.display = 'none'; // Ocultar el producto
+            }
         });
     });
-}
+});
+
+
+
+
+
+

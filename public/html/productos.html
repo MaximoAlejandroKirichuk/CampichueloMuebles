@@ -81,11 +81,13 @@
             <div id="filtros" class="filtros">
                 <button id="boton-atras-filtro"><i class="bi bi-arrow-left"></i></button>
                 <ul id="lista-filtros">
-
-                </ul>
-                
+                    <li><button id="Mesa-comedor" class="botones-filtro">Mesas de comedor</button></li>
+                    <li><button id="islas" class="botones-filtro">Barra/islas</button></li>
+                    <li><button id="tablas-de-asado" class="botones-filtro">Tablas de asado</button></li>
+                    <li><button id="rack-tv" class="botones-filtro">Racks</button></li>
+                    <li><button id="Todos" class="botones-filtro">Todos los productos</button></li>
+                </ul> <!-- Agregado -->
             </div>
-
             <div class="container wrap-productos">
                 <main>
                     <div class="header-lista-productos">
@@ -96,6 +98,7 @@
                         <!-- Esto se va a rellenar con JS -->
                         <!-- Repite el div para cada producto -->
                     </div>
+                    <div id="contenedor-productos-seleccionados" class="contenedor-productos-seleccionados"></div>
                 </main>
             </div>
             <footer>
