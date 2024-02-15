@@ -28,20 +28,4 @@ if (contenedorProductos) {
     console.error('Elemento contenedorProductos no encontrado');
 }
 
-// Abrir filtro
-const abrirFiltro = document.getElementById('boton-filtro');
-const Filtros = document.getElementById('filtros');
-
-abrirFiltro.addEventListener('click', function() {
-    Filtros.classList.toggle('show');
-    document.getElementById('overlay-filtro').style.display = Filtros.classList.contains('show') ? 'block' : 'none';
-});
-
-// Cerrar filtro
-const botonParaAtrasProductosFiltro = document.getElementById('boton-atras-filtro');
-
-botonParaAtrasProductosFiltro.addEventListener('click', function() {
-    Filtros.classList.remove('show');
-    document.getElementById('overlay-filtro').style.display = 'none';
-});
 

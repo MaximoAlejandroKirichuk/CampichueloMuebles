@@ -1,7 +1,22 @@
-// hice este archivo para que pueda ver el codigo de los filtros, la idea es que se pueda ver los filtros de una manera mas clara y sencilla.(ya que queda mucho espacio entre estos)
+// Abrir filtro
+const abrirFiltro = document.getElementById('boton-filtro');
+const Filtros = document.getElementById('filtros');
 
-//cuando solucione este problema voy a corregir las rutas de mi aside.(que cuando el usuario haga click por ejemplo en el boton de todo madera, se despliegue justamente la categoria todo madera)
-// Selecciona todos los botones de filtro
+abrirFiltro.addEventListener('click', function() {
+    Filtros.classList.toggle('show');
+    document.getElementById('overlay-filtro').style.display = Filtros.classList.contains('show') ? 'block' : 'none';
+});
+
+// Cerrar filtro
+const botonParaAtrasProductosFiltro = document.getElementById('boton-atras-filtro');
+
+botonParaAtrasProductosFiltro.addEventListener('click', function() {
+    Filtros.classList.remove('show');
+    document.getElementById('overlay-filtro').style.display = 'none';
+});
+
+// Funcion filtrar
+
 // Selecciona todos los botones de filtro
 const botonesFiltro = document.querySelectorAll('.botones-filtro');
 
@@ -17,8 +32,11 @@ botonesFiltro.forEach(boton => {
             const categoriaProducto = producto.dataset.categoria; // Obtener la categoría del producto desde su dataset
             if (categoria === 'Todos' || categoria === categoriaProducto) {
                 producto.style.display = 'block'; // Mostrar el producto
+                Filtros.classList.remove('show');// Ocultar el aside filtro
+                document.getElementById('overlay-filtro').style.display = 'none';// Ocultar el overlay
             } else {
                 producto.style.display = 'none'; // Ocultar el producto
+                
             }
         });
     });

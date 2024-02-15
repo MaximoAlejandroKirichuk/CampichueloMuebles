@@ -13,9 +13,27 @@
         <link rel="stylesheet" href="/css/style.css">
     </head>
     <body>
+        <!--HEADER PARA ESCRITORIO-->
+        <header class="desktop-header">
+            <div class="logo-container">
+                <a href="/html/index.html">
+                    <img src="/img/logo/Logo.png" class="desktop-logo" alt="Logo de la empresa">
+                </a> 
+            </div>
+            <nav class="main-menu-desktop">
+                <ul class="navigation-list-desktop">
+                    <li><a href="/html/nosotros.html">Nosotros</a></li>
+                    <li><a href="/html/productos.html">Productos</a></li>
+                    <li><a href="/html/Garantia.html">Garantía</a></li>
+                    <li><a href="/html/cuidados-muebles.html">Cuidados</a></li>
+                    <li><a href="/html/envios.html">Plazos de fabricación y Envios</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!--HEADER PARA CELULAR-->
         <header class="mobile-header">
             <div class="logo-container">
-                <a href="index.html">
+                <a href="/html/index.html">
                     <img src="/img/logo/Logo.png" class="mobile-logo" alt="Logo de la empresa">
                 </a> 
             </div>
@@ -23,54 +41,17 @@
             <button id="menu-toggle-button" class="menu-toggle-button">
                 <img src="/img/icon/icon-menu.png" alt="Icono para abrir el menú">
             </button>
+            <!--generado con js-->
+            
             <nav id="main-menu" class="main-menu">
                 <ul class="navigation-list">
                     <button id="menu-close-button" class="menu-close-button" style="position: absolute; top: 5px; left: 5px; padding: 10px; border-radius: 50%;">
                         <i class="bi bi-x-lg icon-close" style="font-size: 1.5em;"></i>
                     </button>
                     <li><a href="/html/nosotros.html">Nosotros</a></li>
-
-                    <li>
-                        <button id="Boton-productos">Productos</a></button>
-                        <ul id="sub-menu" class="sub-menu">
-                            <button id="boton-volver-atras-productos">
-                                <i class="bi bi-arrow-left"></i>
-                            </button>
-                            
-                                
-                                    <li><button id="boton-mesas-comedor">Mesas de comedor y sillas</button></li>
-                                    <li id="barras-islas-banquetas">Barra/islas</li>
-                                    <li id="tablas-de-asado">Tablas de asado</li>
-                                    <li id="rack">Racks</li>
-                                    <li><a href="/html/productos.html">Todos los productos</a></li>
-                            
-                            
-                                <ul id="sub-menu-mesas-comedor-sillas" class="sub-menu-mesas-comedor-sillas">
-                                    <button id="boton-para-atras-productos-estilos"><i class="bi bi-arrow-left"></i></button>
-                                    <li>
-                                        <button id="boton-estilo-industrial">Estilo industrial</button>
-
-                                        <ul id="listado-productos-industrial" class="listado-productos-industrial">
-                                            <button id="boton-volver-atras-productos-estilos-estilo-industrial"><i class="bi bi-arrow-left"></i></button>
-                                            <li><button><a href="">MESA X</a></button></li>
-                                            <li><button><a href="#">MESA TRADICIONAL 4 PATAS</a></button></li>
-                                            
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <button id="boton-estilo-todo-madera">Todo madera</button>
-
-                                        <ul id="listado-productos-todo-madera" class="listado-productos-todo-madera">
-                                        <button id="boton-volver-atras-productos-estilos-todo-madera"><i class="bi bi-arrow-left"></i></button>
-                                            <li><a href=""></a>MESA REDONDA</li>
-                                            <li><a href=""></a>MESA ESTILO CAMPO</li>
-                                            
-                                    </li>
-                                        </ul>
-                        </ul>
-                        </ul>
-                        <li><a href="/html/Garantia.html">Garantía</a></li>
-                        <li><a href="/html/cuidados-muebles.html">Cuidados</a></li>
+                    <li><a href="/html/productos.html">Productos</a></li>
+                    <li><a href="/html/Garantia.html">Garantía</a></li>
+                    <li><a href="/html/cuidados-muebles.html">Cuidados</a></li>
                     <li><a href="/html/envios.html">Plazos de fabricación y Envios</a></li>
                 </ul>       
             </nav>
@@ -89,12 +70,21 @@
                         <li>No apoyar elementos de alta temperatura o con fuego. Se puede quemar la madera.</li>
                         <li>A largo plazo las madera que estén expuestas al sol, la tierra o el agua, pueden requerir un mantenimiento. Lo mismo sucede con el caño, que puede llegar a oxidar. (Consultar que productos para hacer el mantenimiento).</li>
                     </ul>
-                    <!-- Agrega tus imágenes aquí -->
                     <div class="img-fluid">
                         <img src="/img/cuidado-madera.jpg" alt="Descripción de la imagen">
                     </div>
                 </section>
-
+                <section class="redes bg-gray-200 p-4">
+                    <div class="text-center">
+                        <h2 class="text-3xl text-gray-800 my-8">Nuestras Redes</h2>
+                        <div class="redes-icon flex justify-center space-x-4">
+                            <a href="https://www.instagram.com/campichuelo/"><i class="bi bi-instagram"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=100071774846680" ><i class="bi bi-facebook"></i></a>
+                            <a href="https://wa.me/549113077-7777"><i class="bi bi-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </section>
+    
             </main>
             </div>
             <a href="https://wa.me/5491155983715" target="_blank" class="whatsapp-button">

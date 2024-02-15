@@ -8,11 +8,31 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="icon" href="/img/logo/Logo-mobile.png" type="image/x-icon">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
         
+        
     </head>
     <body>
+        <!--HEADER PARA ESCRITORIO-->
+        <header class="desktop-header">
+            <div class="logo-container">
+                <a href="">
+                    <img src="img/logo/Logo.png" class="desktop-logo" alt="Logo de la empresa">
+                </a> 
+            </div>
+            <nav class="main-menu-desktop">
+                <ul class="navigation-list-desktop">
+                    <li><a href="html/nosotros.html">Nosotros</a></li>
+                    <li><a href="html/productos.html">Productos</a></li>
+                    <li><a href="html/Garantia.html">Garantía</a></li>
+                    <li><a href="html/cuidados-muebles.html">Cuidados</a></li>
+                    <li><a href="html/envios.html">Plazos de fabricación y Envios</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!--HEADER PARA CELULAR-->
         <header class="mobile-header">
             <div class="logo-container">
                 <a href="">
@@ -33,44 +53,7 @@
                     <li><a href="html/nosotros.html">Nosotros</a></li>
 
                     <li>
-                        <button id="Boton-productos">Productos</a></button>
-                        <ul id="sub-menu" class="sub-menu">
-                            <button id="boton-volver-atras-productos">
-                                <i class="bi bi-arrow-left"></i>
-                            </button>
-                            
-                                
-                                    <li><button id="boton-mesas-comedor">Mesas de comedor y sillas</button></li>
-                                    <li id="barras-islas-banquetas">Barra/islas</li>
-                                    <li id="tablas-de-asado">Tablas de asado</li>
-                                    <li id="rack">Racks</li>
-                                    <li><a href="html/productos.html">Todos los productos</a></li>
-                            
-                            
-                                <ul id="sub-menu-mesas-comedor-sillas" class="sub-menu-mesas-comedor-sillas">
-                                    <button id="boton-para-atras-productos-estilos"><i class="bi bi-arrow-left"></i></button>
-                                    <li>
-                                        <button id="boton-estilo-industrial">Estilo industrial</button>
-
-                                        <ul id="listado-productos-industrial" class="listado-productos-industrial">
-                                            <button id="boton-volver-atras-productos-estilos-estilo-industrial"><i class="bi bi-arrow-left"></i></button>
-                                            <li><button><a href="">MESA X</a></button></li>
-                                            <li><button><a href="#">MESA TRADICIONAL 4 PATAS</a></button></li>
-                                            
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <button id="boton-estilo-todo-madera">Todo madera</button>
-
-                                        <ul id="listado-productos-todo-madera" class="listado-productos-todo-madera">
-                                        <button id="boton-volver-atras-productos-estilos-todo-madera"><i class="bi bi-arrow-left"></i></button>
-                                            <li><a href=""></a>MESA REDONDA</li>
-                                            <li><a href=""></a>MESA ESTILO CAMPO</li>
-                                            
-                                    </li>
-                                        </ul>
-                        </ul>
-                        </ul>
+                        <button id="Boton-productos"><a href="html/productos.html">Productos</a></button></li>
                         <li><a href="html/Garantia.html">Garantía</a></li>
                         <li><a href="html/cuidados-muebles.html">Cuidados</a></li>
                     <li><a href="html/envios.html">Plazos de fabricación y Envios</a></li>
@@ -96,10 +79,11 @@
                               <h5><a href="/html/productos.html">Mesas de comedor</a></h5>
                             </div>
                           </div>
-                          <div class="carousel-item">
+                          <div class="carousel-item"><a href="/html/productos.html">
                             <img src="/img/carrusel/ESCRITORIO VIRGINIA.png" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
-                              <h5><a href="/html/productos.html">Escritorios</a></h5>
+                              <h5>Escritorios</h5>
+                              </a>
                             </div>
                           </div>
                           <div class="carousel-item">
@@ -124,7 +108,7 @@
                           <span class="visually-hidden">Next</span>
                         </button>
                       </div>
-                    </section>
+
 
                     <!--INFORMACION RESPECTO AL PRODUCTO Y EMPIEZO A USAR TAILWIND-->
                     <section class="text-center info-inicio">
@@ -140,68 +124,75 @@
                             </div>
                         </div>
                     </section>
-                    
-                    
-                            <section>
-                                <div class="relative fotos-texto mesas flex-wrap mesas-info">
-                                    <div class="absolute inset-0 flex items-center justify-center">
-                                        <a  id="Mesa-comedor" class="text-center text-white w-5">
-                                            MESAS DE COMEDOR Y SILLAS
-                                        </a>
-                                    </div>
-                            </section>
-                            
-                            <section>
-                                <div class="relative fotos-texto sillas flex-wrap rack-info">
-                                    <div class="absolute inset-0 flex items-center justify-center">
-                                        <a href="" id="silla-link" class="text-center text-white bg-red-500 px-2 py-1">
-                                        RACK TV , VAJILLEROS Y COMODAS
-                                        </a>
-                                    </div>
-                            </section>
-                        
-                            <section>
-                                <div class="relative fotos-texto adicionales flex-wrap islas-info">
-                                    <div class="absolute inset-0 flex items-center justify-center">
-                                        <a href="/adicionales" id="adicionales-link" class="text-center text-white bg-red-500 px-2 py-1">
-                                            ISLAS
-                                        </a>
+                    <div class="wrap-section-con-enlaces">
+                        <section>
+                            <a href="html/productos.html">
+                                <div class="relative fotos-texto adicionales flex-wrap ofertas-info">
+                                    <div class="absolute inset-0 flex items-center justify-center ">
+                                        <h5 href="html/productos.html" class="text-center text-white bg-red-500 px-2 py-1">
+                                            OFERTAS EN PRODUCTOS CON STOCK
+                                        </h5>
                                     </div>
                                 </div>
-                            </section>
-                        
-                            <section>
-                                <div class="relative fotos-texto adicionales flex-wrap ofertas-info">
-                                    <div class="absolute inset-0 flex items-center justify-center">
-                                        <a href="/adicionales" id="adicionales-link" class="text-center text-white bg-red-500 px-2 py-1">
-                                            OFERTAS EN STOCK
-                                        </a>
-                                    </div>
-                            
-                        </div>
-                    </section>
-                        <section class="sub-paginas text-center p-4 bg-black shadow-lg rounded-lg mx-4 scale-50">
-                            <h2 class="text-2xl text-white my-8">20% OFF EN EFECTIVO CON TODOS LOS PRODUCTOS</h2>
-                        </section>                        
-                        <section class="sub-paginas text-center p-4 bg-white shadow-lg rounded-lg mx-4 mt-4">
-                            <h2 class="text-2xl text-gray-800 my-8">ENVIOS A TODO EL PAIS <span class="font-bold text-red-600">CABA Y GRAN BUENOS AIRES CON FLETE PROPIO</span></h2>
+                            </a>
                         </section>
-                    </section>
+                        <section>
+                            <a href="html/overview.html?id=mesa-gervasoni-peteribi">
+                                <div class="relative fotos-texto mesas flex-wrap mesas-info">
+                                    <div class="absolute inset-0 flex items-center justify-center">
+                                        <h5 class="text-center text-white w-5">
+                                            MESAS DE COMEDOR Y SILLAS
+                                        </h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </section>
+                            
+                            <section>
+                                <a href="/html/overview.html?id=Rack-TV-Master">
+                                    <div class="relative fotos-texto sillas flex-wrap rack-info">
+                                        <div class="absolute inset-0 flex items-center justify-center">
+                                            <h5 href="/html/overview.html?id=Rack-TV-Master" class="text-center text-white bg-red-500 px-2 py-1" id="rack-tv">RACK TV </h5>
+                                        </div>
+                                    </div>
+                                    </a>
+                                </section>
+                                
+                                <section>
+                                    <a href="/html/overview.html?id=isla-barra-balcarce">
+                                    <div class="relative fotos-texto adicionales flex-wrap islas-info">
+                                        <div class="absolute inset-0 flex items-center justify-center">
+                                            <h5 class="text-center text-white bg-red-500 px-2 py-1">
+                                                ISLAS
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </a>
+                                </section>
+                            </div>
+                                
+                                <section class="sub-paginas text-center p-4 bg-black shadow-lg rounded-lg mx-4 scale-50">
+                                    <h2 class="text-2xl text-white my-8">20% OFF EN EFECTIVO CON TODOS LOS PRODUCTOS</h2>
+                                </section>                        
+                                <section class="sub-paginas text-center p-4 bg-white shadow-lg rounded-lg mx-4 mt-4">
+                                    <h2 class="text-2xl text-gray-800 my-8">ENVIOS A TODO EL PAIS <span class="font-bold text-red-600">CABA Y GRAN BUENOS AIRES CON FLETE PROPIO</span></h2>
+                                </section>
+                            </section>
 
-                    <!--ICONOS SACADOS DE BOOTSTRAPP ICON-->
-                    <section class="redes bg-gray-200 p-4">
+                            <!--ICONOS SACADOS DE BOOTSTRAPP ICON-->
+                            <section class="redes bg-gray-200 p-4">
                         <div class="text-center">
                             <h2 class="text-3xl text-gray-800 my-8">Nuestras Redes</h2>
                             <div class="redes-icon flex justify-center space-x-4">
                                 <a href="https://www.instagram.com/campichuelo/"><i class="bi bi-instagram"></i></a>
-                                <a href="https://www.facebook.com/campichuelo/" ><i class="bi bi-facebook"></i></a>
+                                <a href="https://www.facebook.com/profile.php?id=100071774846680" ><i class="bi bi-facebook"></i></a>
                                 <a href="https://wa.me/549113077-7777"><i class="bi bi-whatsapp"></i></a>
                             </div>
                         </div>
                     </section>
         
-        
-        <a href="https://wa.me/5491155983715" target="_blank" class="whatsapp-button">
+                    
+                    <a href="https://wa.me/5491155983715" target="_blank" class="whatsapp-button">
             <img src="img/redes/whatsapp.derecha.png" alt="Icono de WhatsApp">
         </a>
         
@@ -210,10 +201,11 @@
 </main>
 </div>
 <footer>
+    
     <div class="content">
         <div class="contacto">
             <h3>Contacto</h3>
-            <p>Whatsapp: <a href="https://wa.me/5491155983715">+54 9 11 3077-7777</p></a> 
+            <p>Whatsapp: <a href="https://wa.me/5491155983715">+54 9 11 5598-3715</p></a> 
             <p>Mail: <a href="mailto:campichuelomuebles@gmail.com">Campichuelomuebles@gmail.com</a>
             </footer>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">

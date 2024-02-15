@@ -17,7 +17,7 @@
     },
     {
         "id": "MESA-X-PETERIBI",
-        "titulo": "MESA X PETERIBI",
+        "titulo": "Mesa x peteribi",
         "imagen":{
             "principal":"/img/productos/mesas de comedor/estilo industrial/mesa-x-peteribi/mesa-x-peteribi-principal.jpeg.jpg",
             "secundario":"/img/productos/mesas de comedor/estilo industrial/mesa-x-peteribi/mesa-x-peteribi-2.jpeg.jpg",
@@ -33,7 +33,7 @@
     },    
     {
         "id": "MESA-X-GUATAMBU",
-        "titulo": "MESA X GUATAMBU",
+        "titulo": "Mesa x guatambu",
         "imagen":{
             "principal":"/img/productos/mesas de comedor/estilo industrial/MESA-X-GUATAMBU/mesa-x-guatambu-principal.jpg",
             "secundario":"/img/productos/mesas de comedor/estilo industrial/MESA-X-GUATAMBU/mesa-x-guatambu-2.jpg",
@@ -49,7 +49,7 @@
     },
     {
         "id": "MESA.X-LAUREL-BREYO",
-        "titulo": "MESA X LAUREL BREYO",
+        "titulo": "Mesa x laure breyo",
         "imagen":{
             "principal":"/img/productos/mesas de comedor/estilo industrial/mesa-x-laurel-brezo/mesa-x-laurel-brezo-principal.jpeg",
             "secundario":"/img/productos/mesas de comedor/estilo industrial/mesa-x-laurel-brezo/mesa-x-laurel-brezo-2.jpeg",
@@ -65,7 +65,7 @@
     },
     {
         "id": "MESA-X-MORA-AMARILLA",
-        "titulo": "MESA X MORA AMARILLA",
+        "titulo": "Mesa x mora amarilla",
         "imagen":{
             "principal":"/img/productos/mesas de comedor/estilo industrial/mesa-x-mora-amarilla/mesa-x-mora-amarilla.-principal.jpg",
             "secundario":"/img/productos/mesas de comedor/estilo industrial/mesa-x-mora-amarilla/mesa-x-mora-amarilla.-2.jpg",
@@ -81,7 +81,7 @@
     },
     {
         "id": "Mesas-tradicional-4-patas",
-        "titulo": "Mesas tradicional 4 patas",
+        "titulo": "Mesa tradicional 4 patas",
         "imagen":{
             "principal":"/img/productos/mesas de comedor/estilo industrial/mesa-tradicional cedro/principal.jpeg",
             "secundario":"/img/productos/mesas de comedor/estilo industrial/mesa-tradicional cedro/mesa-tradicional-cedro-2.jpeg",
@@ -97,7 +97,7 @@
     },
     {
         "id": "MESA-TRADICIONAL-GUAYCA",
-        "titulo": "Mesas tradicional 4 guayca",
+        "titulo": "Mesa tradicional 4 guayca",
         "imagen":{
             "principal":"/img/productos/mesas de comedor/estilo industrial/mesa-tradicional-guayca/mesa-tradicional guayca principal.jpg",
             "secundario":"/img/productos/mesas de comedor/estilo industrial/mesa-tradicional-guayca/mesa-tradicional guayca principal 2.jpg",
@@ -113,7 +113,7 @@
     },
     {
         "id": "MESA-REDONDA-CRUZ-PETERIBI",
-        "titulo": "mesa redonda cruz peteribi",
+        "titulo": "Mesa redonda cruz peteribi",
         "categoria": {
             "nombre": "mesa-redonda-cruz",
             "estilo": "todo-madera"
@@ -129,7 +129,7 @@
     },
     {
         "id": "mesa-gervasoni-peteribi",
-        "titulo": "mesa gervasoni peteribi",
+        "titulo": "Mesa gervasoni peteribi",
         "categoria": {
             "nombre": "mesa-gervasoni-peteribi",
             "estilo": "todo-madera"

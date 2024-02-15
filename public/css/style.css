@@ -34,11 +34,11 @@ body {
     margin: 0;
 }
 
-/*HEADER*/
+/*HEADER MOBILE*/
 .mobile-header {
-    position: relative; /* Añade esto */
+    position: relative; 
     display: flex;
-    justify-content: center; /* Cambia esto para centrar el logo */
+    justify-content: center; 
     align-items: center;
     background-color: var(--primary-color);
 }
@@ -53,11 +53,64 @@ body {
     color: var(--secondary-color);
 }
 
+/*Desktop header*/
+.desktop-header{
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 1rem;
+}
+.logo-container-desktop {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+}
+
+.desktop-logo {
+    width: 250px;
+    align-self: flex-start;
+    padding-left: 20px;
+    transition: all 0.3s ease;
+}
+
+.desktop-logo:hover {
+    transform: scale(1.1);
+}
+
+.main-menu-desktop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation-list-desktop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 1rem;
+}
+
+.navigation-list-desktop a {
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+    color:var(--black);
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.navigation-list-desktop a:hover {
+    color: var(--black);
+    transform: scale(1.1);
+    background-color: var(--primary-dark-color);
+}
+
 /*Aside*/
 .menu-toggle-button {
-    position: absolute; /* Añade esto */
-    top: 5px; /* Añade esto para mover el botón un poco más arriba */
-    right: 0px; /* Añade esto para mover el botón a la derecha */
+    position: absolute; 
+    top: 5px; 
+    right: 0px; 
     background: none;
     border: none;
     cursor: pointer;
@@ -73,7 +126,7 @@ body {
     right: 0;
     width: 45%;
     height: 100vh;
-    background-color:var(--white-color);
+    background-color: var(--white-color);
     color: #000000;
     padding: 20px;
     box-sizing: border-box;
@@ -88,140 +141,18 @@ body {
 }
 .navigation-list li {
     justify-content: center;
-    align-items: center; /* Añade esta línea para centrar el texto verticalmente */
+    align-items: center; 
     display: block;
     margin-bottom: 40px;
     gap: 25%;
-    border-bottom: 1px solid var(--secondary-color); /* Añade esta línea para crear una línea de separación */
-    padding: 10px 0; /* Añade esta línea para crear un poco de espacio entre el texto y la línea de separación */
+    border-bottom: 1px solid var(--secondary-color); 
+    padding: 10px 0;
     }
 
 
 .navigation-list a {
     color: #000000;
     text-decoration: none;
-}
-
-
-
-/*Productos submenu*/
-
-.sub-menu{
-    display: none;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 45%;
-    height: 100vh;
-    background-color:var(--white-color);
-    color: #000000;
-    padding: 20px;
-    box-sizing: border-box;
-    overflow-y: auto;
-    transition: transform 0.3s ease-in-out;
-    z-index: 9;
-}
-
-.sub-menu.show{
-    display: block;
-}
-
-/*sub-menu-mesas-comedor-sillas*/
-.sub-menu-mesas-comedor-sillas{
-    display: none;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 45%;
-    height: 100vh;
-    background-color:var(--white-color);
-    color: #000000;
-    padding: 20px;
-    box-sizing: border-box;
-    overflow-y: auto;
-    transition: transform 0.3s ease-in-out;
-    z-index: 9;
-}
-.sub-menu-mesas-comedor-sillas.show{
-    display: block;
-}
-
-/*ESTILO INDUSTRIAL*/
-.boton-estilo-industrial{
-    display: none;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 45%;
-    height: 100vh;
-    background-color:var(--white-color);
-    color: #000000;
-    padding: 20px;
-    box-sizing: border-box;
-    overflow-y: auto;
-    transition: transform 0.3s ease-in-out;
-    z-index: 9;
-}
-.boton-estilo-industrial.show{
-    display: block;
-}
-.listado-productos-industrial {
-    display: none;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 45%;
-    height: 100vh;
-    background-color:var(--white-color);
-    color: #000000;
-    padding: 20px;
-    box-sizing: border-box;
-    overflow-y: auto;
-    transition: transform 0.3s ease-in-out;
-    z-index: 9;
-}
-
-.listado-productos-industrial.show {
-    display: block;
-}
-
-/* todo madera*/
-.boton-estilo-todo-madera{
-    display: none;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 45%;
-    height: 100vh;
-    background-color:var(--white-color);
-    color: #000000;
-    padding: 20px;
-    box-sizing: border-box;
-    overflow-y: auto;
-    transition: transform 0.3s ease-in-out;
-    z-index: 9;
-}
-.boton-estilo-todo-madera.show{
-    display: block;
-}
-
-.listado-productos-todo-madera{
-    display: none;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 45%;
-    height: 100vh;
-    background-color:var(--white-color);
-    color: #000000;
-    padding: 20px;
-    box-sizing: border-box;
-    overflow-y: auto;
-    transition: transform 0.3s ease-in-out;
-    z-index: 9;
-}
-.listado-productos-todo-madera.show{
-    display: block;
 }
 
 /* cerrar aside */
@@ -232,7 +163,7 @@ body {
     height: auto;
     width: 40px;
     margin-left: 0px;
-    margin-bottom: 7px; /* Ajusta este valor para mover el botón más arriba o más abajo */
+    margin-bottom: 7px;
 }
 
 /* Carrusel */
@@ -250,12 +181,16 @@ body {
     object-fit: cover;
 }
 
-
-
 .carousel-indicators .active{
     background-color: var(--secondary-color);
 }
 
+.carousel-inner h5{
+    color: var(--black);
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 20px;
+}
 
                    /* Main */
 
@@ -265,7 +200,7 @@ body {
     color: #000000;
     margin-bottom: 30px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 0; /* Hace los bordes cuadrados */
+    border-radius: 0;
 }
 /*info-inicio*/
 @keyframes slideInFromLeft {
@@ -291,8 +226,8 @@ body {
 .info-inicio h2 {
     color: var(--black);
     text-align: center;
-    overflow-wrap: break-word; /* Añade esta línea */
-    word-wrap: break-word; /* Añade esta línea para soporte en navegadores antiguos */
+    overflow-wrap: break-word;
+    word-wrap: break-word; 
 }
 
 .fotos-texto{
@@ -302,7 +237,10 @@ body {
     align-items: center;
     justify-content: center;
     margin: 1rem;
-    
+    transition: transform 0.3s ease;
+}
+.fotos-texto:hover {
+    transform: scale(1.05);
 }
 .mesas-info {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/section-info/sillas-mesas.jpg');
@@ -386,16 +324,16 @@ body {
 /* Footer */
 
 footer {
-    background-color: var(--secondary-color); /* Cambia esto al color que prefieras */
-    color: rgb(255, 255, 255); /* Cambia esto al color que prefieras para el texto */
-    padding: 20px; /* Añade un poco de relleno alrededor del footer */
+    background-color: var(--secondary-color); 
+    color: rgb(255, 255, 255);
+    padding: 20px;
 }
 
 .footer .contacto {
-    display: flex; /* Añade esto para hacer que los elementos estén uno al lado del otro */
-    justify-content: center; /* Centra los elementos horizontalmente */
-    align-items: center; /* Centra los elementos verticalmente */
-    flex-direction: column; /* Añade esto para que los elementos estén uno debajo del otro */
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column;
 }
 
 /*Nosotros*/
@@ -426,18 +364,18 @@ footer {
 .titulo-sub-paginas{
     text-align: center;
     margin: 0 auto;
-    font-size: 0.3rem; /* Reduce el tamaño de la fuente */
+    font-size: 0.3rem; 
     color: #333;
     padding: 20px 0;
-    width: 80%; /* Añade un ancho específico */
-    margin: 0 auto; /* Centra el título */
+    width: 80%;
+    margin: 0 auto; 
 }
 .section-subpaginas {
     margin-bottom: 30px;
     background-color: var(--primary-color);
     padding: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 0; /* Hace los bordes cuadrados */
+    border-radius: 0; 
 }
 
 .section-subpaginas h2 {
@@ -525,6 +463,10 @@ footer {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         gap: 1rem;
+        transition: transform 0.3s ease;
+    }
+    .producto:hover {
+        transform: scale(1.05);
     }
 
     .producto.categoria{
@@ -556,12 +498,12 @@ footer {
     display: block;
     margin-bottom: 40px;
     gap: 25%;
-    border-bottom: 1px solid var(--secondary-color); /* Añade esta línea para crear una línea de separación */
-    padding: 10px 0; /* Añade esta línea para crear un poco de espacio entre el texto y la línea de separación */
+    border-bottom: 1px solid var(--secondary-color); 
+    padding: 10px 0; 
 }
 
 .filtros li:hover {
-    color: var(--primary-color); /* Cambia el color del texto al color primario cuando se pasa el mouse sobre el elemento */
+    color: var(--primary-color); 
 }
 
 /*Mostrar productos overview*/
@@ -591,10 +533,10 @@ footer {
 
 .parrafo-overview {
     font-family: open sans;
-    font-size: 1em; /* Aumenta el tamaño de la fuente */
-    color: #333; /* Cambia el color del texto a un gris oscuro */
-    line-height: 1.6; /* Aumenta el espaciado de las líneas para mejorar la legibilidad */
-    margin: 20px 0; /* Añade un poco de margen en la parte superior e inferior */
+    font-size: 1em; 
+    color: #333; 
+    line-height: 1.6; 
+    margin: 20px 0; 
 }
 .contenedor-botones {
     display: flex;
@@ -625,14 +567,30 @@ footer {
     color: rgb(0, 0, 0);
     text-decoration: none;
 }
-
-.contenedor-productos-seleccionados{
-    display: n;
+.overviews-enlaces{
+    font-size: 20px;
+    padding-top: 20px;
+    color: var(--primary-dark-color);
+}
+.overviews-enlaces:hover{
+    color: var(--secondary-color);
+    transform: scale(1.1);
+}
+                    /*MEDIA QUERIES*/
+@media (min-width: 992px) {
+    .mobile-header{
+        display: none;
+    }
+    .desktop-header{
+        position: relative; 
+        display: flex;
+        background-color: var(--primary-color);
+    }
+    .main-menu-desktop{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
-.carousel-inner h5{
-    color: var(--black);
-    font-size: 1.5rem;
-    text-align: center;
-    margin-top: 20px;
-}
+

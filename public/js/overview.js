@@ -19,6 +19,12 @@ if (mostrarInformacionOverview) {
         const producto = productosFiltrados.find(prod => prod.id === productoId);
         if (producto) {
           mostrarInformacionOverview.innerHTML = `
+          <button>
+            <p>
+              <a class="overviews-enlaces" href="/html/index.html">Home</a>/
+              <a class="overviews-enlaces" href="/html/productos.html">Productos</a>
+            </p>
+          </button>
           <h2 class="titulo-sub-paginas">${producto.titulo}</h2>
           <div id="carouselExample" class="carousel slide">
               <div class="carousel-inner">
@@ -44,7 +50,7 @@ if (mostrarInformacionOverview) {
           <p class="parrafo-overview">${producto.detalles['texto-descripcion']}</p>
           <div class="contenedor-botones">
           <button class="boton-consultar"><a href="https://wa.me/5491155983715">Pedir mas info</a></button>
-          <button class="boton-seguir-comprando"><a href="/html/productos.html">Seguir buscando</a></button>
+          <a href="/html/productos.html"><button class="boton-seguir-comprando">Seguir buscando</button></a>
           </div>
       `;
       
