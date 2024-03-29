@@ -1,29 +1,23 @@
-// Importar express
+// Importa express y otras dependencias necesarias
 const express = require('express');
-// Importar ejs
-const ejs = require('ejs');
-// Crear una instancia de express
+const path = require('path');
+
+// Crea una instancia de express
 const app = express();
 
-const port = 3000;
+// Configura el puerto
+const port = process.env.PORT || 3000;
 
-// Configurar el motor de vistas y establecer la carpeta de vistas
+// Configura el motor de vistas y la carpeta de vistas
 app.set('view engine', 'ejs');
-app.set('views', __dirname + '/views');
+app.set('views', path.join(__dirname, 'views'));
 
-app.get("/", (req, res) => {
-    res.render('index');
-});
+// Sirve archivos estáticos desde la carpeta 'public'
+app.use(express.static(path.join(__dirname, 'public')));
 
-// Carpeta 'public' como carpeta estática
-app.use(express.static('public'));
+// Define tus rutas y lógica de la aplicación aquí
 
-app.get('/data/:productoId', (req, res) => {
-    // Lógica para obtener datos del producto
-    const productoId = req.params.productoId;
-    res.send(`Mostrar datos del producto con ID ${productoId}`);
-});
-
+// Inicia el servidor
 app.listen(port, () => {
-    console.log(`El servidor está ejecutándose en http://localhost:${port}`);
+    console.log(`Servidor iniciado en http://localhost:${port}`);
 });
