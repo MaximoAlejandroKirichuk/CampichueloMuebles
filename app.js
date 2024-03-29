@@ -1,24 +1,22 @@
-//imoporte express
+// Importar express
 const express = require('express');
-//importe ejs
+// Importar ejs
 const ejs = require('ejs');
-//cree una instancia de express
+// Crear una instancia de express
 const app = express();
 
 const port = 3000;
 
 // Configurar el motor de vistas y establecer la carpeta de vistas
 app.set('view engine', 'ejs');
+app.set('views', __dirname + '/views');
 
-app.get("/", (req, res) =>{
+app.get("/", (req, res) => {
     res.render('index');
 });
 
-
-// carpeta 'public' como carpeta estática
+// Carpeta 'public' como carpeta estática
 app.use(express.static('public'));
-
-
 
 app.get('/data/:productoId', (req, res) => {
     // Lógica para obtener datos del producto
